@@ -1,0 +1,14 @@
+:root {
+    /* FONTS */
+    --font-sans: "Space Grotesk", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+    /* COLORS */
+    --background: #0a0d16;
+    --gradient: radial-gradient(at 20% 20%, oklch(78% .18 145 / .18) 0, transparent 50%), radial-gradient(at 80% 30%, oklch(70% .2 320 / .22) 0, transparent 50%), radial-gradient(at 50% 90%, oklch(60% .2 240 / .18) 0, transparent 50%);
+    --gray: #979eb2;
+    --green: #61d46a;
+    --border: #282d3d;
+    --card: #131826;
+    --input: #1f253a;
+}

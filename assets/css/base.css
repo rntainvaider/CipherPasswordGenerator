@@ -1,0 +1,163 @@
+body {
+    background: var(--background);
+    font-family: var(--font-sans);
+}
+
+img {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--gradient);
+}
+
+.wrapper {
+    max-width: 576px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__logo-icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--green);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.header__languages {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: color-mix(in oklab, var(--card) 60%, transparent);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 4px 5px;
+}
+
+.header__languages-icon {
+    width: 14px;
+    height: 14px;
+    color: var(--gray);
+    margin: 0 4px 0 8px;
+}
+
+.header__language-button {
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: var(--gray);
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.header__language-button--active {
+    background: var(--green);
+    color: black;
+}
+
+/* SECTION */
+
+.password {
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background-color: color-mix(in oklab, var(--card) 60%, transparent);
+    padding: 32px;
+}
+
+.password__label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.password__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    background-color: color-mix(in oklab, var(--input) 40%, transparent);
+}
+
+.password__text {
+    font-family: var(--font-mono);
+    font-size: 20px;
+    overflow-wrap: anywhere;
+    color: white;
+}
+
+.password__copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border: 1px solid var(--border);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+.password__copy--copied {
+    background: var(--green);
+    border: 1px solid var(--green);
+}
+
+.password__copy--copied .password__copy-icon {
+    color: black;
+}
+
+.password__copy-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--gray);
+    transition: color 0.3s ease;
+}
+
+/* MEDIA */
+
+@media (hover: hover) {
+    .header__language-button:not(.header__language-button--active):hover {
+        color: white;
+    }
+
+    .password__copy:not(.password__copy--copied):hover {
+        background: var(--input);
+    }
+
+    .password__copy:not(.password__copy--copied):hover .password__copy-icon {
+        color: white;
+    }
+}

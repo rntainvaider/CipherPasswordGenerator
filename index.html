@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="ru">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cipher | Generating passwords</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="shortcut icon" href="./assets/icons/user-key.svg" type="image/x-icon">
+</head>
+
+<body>
+  <main class="main">
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__logo">
+          <img src="./assets/icons/shield.svg" alt="" class="header__logo-icon">
+          <div>
+            <h1 class="title">
+              Cipher
+            </h1>
+            <p class="subtitle">
+              кузница паролей · криптослучайно
+            </p>
+          </div>
+        </div>
+        <div class="header__languages">
+          <svg class="header__languages-icon" viewBox="0 0 24 24">
+            <use href="./assets/icons/sprite.svg#languages"></use>
+          </svg>
+          <button class="header__language-button" data-language="en">
+            EN
+          </button>
+          <button class="header__language-button header__language-button--active" data-language="ru">
+            RU
+          </button>
+        </div>
+      </div>
+      <section class="password">
+        <h2 class="password__label">
+          Ваш пароль
+        </h2>
+        <div class="password__wrapper">
+          <span class="password__text">
+            $f(DLeFMKXpSuAK{Wm&;0@_nxsk7^cQJO#8FjoJICRUjMSBL
+          </span>
+          <button class="password__copy">
+            <svg class="password__copy-icon" viewBox="0 0 24 24">
+              <use href="./assets/icons/sprite.svg#copy" class="password__copy-use"></use>
+            </svg>
+          </button>
+        </div>
+        <h2 class="password__label">
+          Длина
+        </h2>
+        <h2 class="password__label">
+          Наборы символов
+        </h2>
+      </section>
+    </div>
+  </main>
+
+  <script src="./assets/js/switchButtons.js"></script>
+  <script src="./assets/js/copy.js"></script>
 </body>
+
 </html>
