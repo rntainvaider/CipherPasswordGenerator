@@ -19,7 +19,7 @@
             <h1 class="title">
               Cipher
             </h1>
-            <p class="subtitle">
+            <p class="subtitle" data-translate="subtitle">
               кузница паролей · криптослучайно
             </p>
           </div>
@@ -37,12 +37,12 @@
         </div>
       </div>
       <section class="password">
-        <h2 class="password__label">
+        <h2 class="password__label" data-translate="password">
           Ваш пароль
         </h2>
         <div class="password__wrapper">
           <span class="password__text">
-            $f(DLeFMKXpSuAK{Wm&;0@_nxsk7^cQJO#8FjoJICRUjMSBL
+
           </span>
           <button class="password__copy">
             <svg class="password__copy-icon" viewBox="0 0 24 24">
@@ -50,18 +50,43 @@
             </svg>
           </button>
         </div>
-        <h2 class="password__label">
-          Длина
-        </h2>
-        <h2 class="password__label">
+        <div class="password__length">
+          <h2 class="password__label" data-translate="length">
+            Длина
+          </h2>
+          <span class="password__length-number">
+            16
+          </span>
+        </div>
+        <input type="range" min="6" max="48" value="16" class="password__range">
+        <h2 class="password__label" data-translate="charset">
           Наборы символов
         </h2>
+        <div class="group__buttons">
+          <button class="group__button">
+            Строчные
+          </button>
+          <button class="group__button">
+            Заглавные
+          </button>
+          <button class="group__button">
+            Цифры
+          </button>
+          <button class="group__button">
+            Символы
+          </button>
+        </div>
+        <button class="password__generate">
+          Сгенерировать пароль
+        </button>
       </section>
     </div>
   </main>
 
   <script src="./assets/js/switchButtons.js"></script>
   <script src="./assets/js/copy.js"></script>
+  <script src="./assets/js/range.js"></script>
+  <script src="./assets/js/passwordText.js"></script>
 </body>
 
 </html>
